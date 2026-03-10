@@ -1,477 +1,987 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Gampala Vijay Kumar | Data Analyst Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
-    <meta name="description" content="Portfolio of Gampala Vijay Kumar - Data Analyst & Analytics Engineer specializing in predictive analytics, dashboards, and Python.">
-
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Prevent Scroll Restore -->
-    <script>
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gampala Vijay Kumar | Portfolio</title>
+<link rel="stylesheet" href="style1.css">
 </head>
-
-<script>
-window.addEventListener("load", function() {
-
-    const intro = document.getElementById("intro-screen");
-    const hero = document.getElementById("main-hero");
-
-    document.body.style.overflow = "hidden";
-
-    setTimeout(function() {
-
-        // Fade out intro
-        intro.style.transition = "opacity 1s ease";
-        intro.style.opacity = "0";
-
-        // Show hero section
-        hero.classList.add("hero-visible");
-
-        document.body.style.overflow = "auto";
-
-        setTimeout(function() {
-            intro.style.display = "none";
-        }, 1000);
-
-    }, 3000);
-
-});
-</script>
 
 <body>
 
-    <!-- ================= INTRO SCREEN ================= -->
+<div class="cursor-light"></div>
+
+<!-- INTRO SCREEN -->
+<!-- INTRO SCREEN -->
+
 <div id="intro-screen">
-    <h1 class="intro-text">
-        <span>G</span><span>A</span><span>M</span><span>P</span><span>A</span><span>L</span><span>A</span>
-        <span>&nbsp;</span>
-        <span>V</span><span>I</span><span>J</span><span>A</span><span>Y</span>
-        <span>&nbsp;</span>
-        <span>K</span><span>U</span><span>M</span><span>A</span><span>R</span><span>.</span>
-    </h1>
+<h1 class="intro-text">
+
+<span>G</span>
+<span>A</span>
+<span>M</span>
+<span>P</span>
+<span>A</span>
+<span>L</span>
+<span>A</span>
+
+&nbsp;
+
+<span>V</span>
+<span>I</span>
+<span>J</span>
+<span>A</span>
+<span>Y</span>
+
+&nbsp;
+
+<span>K</span>
+<span>U</span>
+<span>M</span>
+<span>A</span>
+<span>R</span>
+
+</h1>
 </div>
 
-<!-- ================= HEADER ================= -->
-<header id="main-hero">
-    <nav>
-        <h2 class="logo">Vijay Kumar</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#training">Training</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- HERO SECTION -->
 
-    <div class="hero-container">
-        <div class="hero-image">
-            <img src="profile.jpg" alt="Gampala Vijay Kumar Profile Photo">
-        </div>
+<header id="hero">
 
-        <div class="hero-content">
-            <h1>Gampala Vijay Kumar</h1>
-            <h2>Data Analyst & Analytics Engineer</h2>
-            <p class="availability">✔ Available for Data Analyst Internship</p>
+<div id="particles-js"></div>
 
-            <p>
-                I design analytical systems that transform complexity into clarity.
-                Through predictive modeling, intelligent visualization, and structured reasoning,
-                I convert raw datasets into strategic, decision-ready insights.
-            </p>
 
-            <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="cv.pdf" class="btn-outline" target="_blank">Download Resume</a>
-            </div>
-        </div>
-    </div>
+<nav class="navbar">
+<h2 class="logo">Vijay Kumar</h2>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+<span class="theme-icon">🌙</span>
+</button>
+</nav>
+
+<div class="hero-container parallax">
+
+<div class="hero-image">
+<img src="profile.jpg" alt="Vijay Kumar">
+</div>
+
+<div class="hero-content">
+
+<h1>Gampala Vijay Kumar</h1>
+
+<h2>
+<span id="typing-text"></span>
+</h2>
+
+<p class="availability">
+✔ Available for Data Analyst Internship
+</p>
+
+<p class="hero-description">
+I analyze data to uncover meaningful patterns and insights. Using Python, machine learning, and visualization tools, I transform raw datasets into clear insights that support data-driven decision-making.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn-primary magnetic">
+View Projects
+</a>
+
+<a href="5.pdf" class="btn-outline magnetic" target="_blank">
+Download Resume
+</a>
+
+</div>
+
+</div>
+</div>
+
 </header>
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT SECTION -->
+
 <section id="about">
-    <h2>About Me</h2>
 
-    <div class="about-wrapper">
+<h2 class="section-title">About Me</h2>
 
-        <div class="about-text">
-            <p>
-                I am a Computer Science undergraduate passionate about transforming
-                complex data into structured, decision-ready insights. My work integrates
-                predictive analytics, dashboard engineering, and strong Python programming
-                to build scalable analytical systems that support real-world decision-making.
-            </p>
+<div class="about-container">
 
-            <p>
-                I believe data is more than numbers — it is intelligence waiting to be
-                uncovered. I approach every dataset with curiosity and structured thinking,
-                applying feature engineering, modeling techniques, and clear visualization
-                strategies to turn patterns into meaningful, actionable outcomes.
-            </p>
+<div class="about-left">
 
-            <p>
-                My goal is to continuously refine my analytical skills and design
-                data-driven solutions that are efficient, reliable, and strategically valuable.
-            </p>
-        </div>
+<p>
+I am a Computer Science undergraduate passionate about transforming complex data into structured insights. My work focuses on data analysis, predictive modeling, and building dashboards that help people understand data clearly.
+</p>
 
-        <div class="about-highlights">
+<p>
+I enjoy working with Python, machine learning, and visualization tools to analyze datasets and uncover meaningful patterns that support data-driven decision-making.
+</p>
 
-            <div class="highlight-box">
-                <h3>Predictive Analytics</h3>
-                <p>
-                    Building regression and classification models using Python
-                    and Scikit-learn to forecast trends and support data-driven strategy.
-                </p>
-            </div>
+<div class="about-stats">
 
-            <div class="highlight-box">
-                <h3>Dashboard Engineering</h3>
-                <p>
-                    Designing interactive Power BI and Excel dashboards that
-                    translate complex datasets into clear, actionable insights.
-                </p>
-            </div>
+<div class="stat">
+<h3>10+</h3>
+<p>Projects</p>
+</div>
 
-            <div class="highlight-box">
-                <h3>Data Modeling & Python</h3>
-                <p>
-                    Applying structured feature engineering and strong Python programming
-                    to develop scalable, high-performance analytical systems.
-                </p>
-            </div>
+<div class="stat">
+<h3>5+</h3>
+<p>Technologies</p>
+</div>
 
-        </div>
-    </div>
+<div class="stat">
+<h3>3+</h3>
+<p>Dashboards</p>
+</div>
+
+</div>
+</div>
+
+<div class="about-right">
+
+<div class="about-card">
+<h3>Data Analysis</h3>
+<p>Exploring datasets using Python, Pandas, and NumPy to discover meaningful insights.</p>
+</div>
+
+<div class="about-card">
+<h3>Machine Learning</h3>
+<p>Building predictive models using Scikit-learn and feature engineering techniques.</p>
+</div>
+
+<div class="about-card">
+<h3>Dashboard Development</h3>
+<p>Creating interactive dashboards using Power BI, Excel, and Python visualization tools.</p>
+</div>
+
+</div>
+</div>
+
 </section>
 
-<!-- ================= SKILLS ================= -->
+<!-- SKILLS SECTION -->
+
 <section id="skills">
-    <h2>Technical Skills</h2>
 
-    <div class="skill-grid">
+<h2 class="section-title">My Skills</h2>
 
-        <div class="card">
-            <h3>Languages</h3>
-            <div class="skill-tags">
-                <span class="primary-skill">Python</span>
-                <span>SQL</span>
-                <span>JavaScript</span>
-                <span>C</span>
-                <span>C++</span>
-            </div>
-        </div>
+<p class="skills-subtitle">Technologies and tools I work with</p>
 
-        <div class="card">
-            <h3>Data Analytics</h3>
-            <div class="skill-tags">
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-                <span>Feature Engineering</span>
-            </div>
-        </div>
+<div class="skills-container">
 
-        <div class="card">
-            <h3>Business Intelligence</h3>
-            <div class="skill-tags">
-                <span>Power BI</span>
-                <span>Advanced Excel</span>
-                <span>Forecasting</span>
-                <span>Scenario Analysis</span>
-                <span>Dashboard Development</span>
-            </div>
-        </div>
+<!-- Languages -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">💻</span>
+<h3>Languages</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">🐍</span>Python</span>
+<span class="skill-tag"><span class="tag-icon">🗄️</span>SQL</span>
+<span class="skill-tag"><span class="tag-icon">⚡</span>JavaScript</span>
+<span class="skill-tag"><span class="tag-icon">🔧</span>C</span>
+<span class="skill-tag"><span class="tag-icon">🔧</span>C++</span>
+<span class="skill-tag"><span class="tag-icon">☕</span>Java</span>
+</div>
+</div>
 
-        <div class="card">
-            <h3>Backend & Web</h3>
-            <div class="skill-tags">
-                <span>Django</span>
-                <span>Flask</span>
-                <span>REST APIs</span>
-                <span>HTML</span>
-                <span>CSS</span>
-            </div>
-        </div>
+<!-- Libraries & Analysis -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">📊</span>
+<h3>Libraries & Analysis</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">🐼</span>Pandas</span>
+<span class="skill-tag"><span class="tag-icon">🔢</span>NumPy</span>
+<span class="skill-tag"><span class="tag-icon">📈</span>Matplotlib</span>
+<span class="skill-tag"><span class="tag-icon">📉</span>Seaborn</span>
+</div>
+</div>
 
-        <div class="card">
-            <h3>Databases</h3>
-            <div class="skill-tags">
-                <span>MySQL</span>
-                <span>Relational Database Design</span>
-            </div>
-        </div>
+<!-- Databases -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">🗃️</span>
+<h3>Databases</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">🐬</span>MySQL</span>
+<span class="skill-tag"><span class="tag-icon">🔗</span>Relational Databases</span>
+</div>
+</div>
 
-        <div class="card">
-            <h3>Tools</h3>
-            <div class="skill-tags">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Jupyter Notebook</span>
-                <span>Anaconda</span>
-            </div>
-        </div>
+<!-- Tools & Platforms -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">🛠️</span>
+<h3>Tools & Platforms</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">🔀</span>Git</span>
+<span class="skill-tag"><span class="tag-icon">🐙</span>GitHub</span>
+<span class="skill-tag"><span class="tag-icon">📓</span>Jupyter Notebook</span>
+<span class="skill-tag"><span class="tag-icon">🐍</span>Anaconda</span>
+<span class="skill-tag"><span class="tag-icon">📊</span>Excel (Advanced)</span>
+<span class="skill-tag"><span class="tag-icon">📋</span>Power BI Desktop</span>
+</div>
+</div>
 
-    </div>
+<!-- Frameworks & Web -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">🌐</span>
+<h3>Frameworks & Web</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">🌐</span>HTML5</span>
+<span class="skill-tag"><span class="tag-icon">🎨</span>CSS3</span>
+<span class="skill-tag"><span class="tag-icon">📊</span>Streamlit</span>
+<span class="skill-tag"><span class="tag-icon">📱</span>Responsive Web Design</span>
+<span class="skill-tag"><span class="tag-icon">🐍</span>Django</span>
+</div>
+</div>
+
+<!-- Data Analytics -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">🔍</span>
+<h3>Data Analytics</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">🧹</span>Data Cleaning</span>
+<span class="skill-tag"><span class="tag-icon">🔄</span>Preprocessing</span>
+<span class="skill-tag"><span class="tag-icon">📊</span>EDA</span>
+<span class="skill-tag"><span class="tag-icon">⚙️</span>Feature Engineering</span>
+<span class="skill-tag"><span class="tag-icon">📈</span>Data Visualization</span>
+</div>
+</div>
+
+<!-- Soft Skills -->
+<div class="skill-category" data-animate="slide">
+<div class="category-header">
+<span class="category-icon">🤝</span>
+<h3>Soft Skills</h3>
+</div>
+<div class="skill-tags">
+<span class="skill-tag"><span class="tag-icon">👥</span>Collaboration</span>
+<span class="skill-tag"><span class="tag-icon">🔄</span>Adaptability</span>
+<span class="skill-tag"><span class="tag-icon">⏰</span>Time Management</span>
+<span class="skill-tag"><span class="tag-icon">💬</span>Communication</span>
+<span class="skill-tag"><span class="tag-icon">🧩</span>Structured Problem-Solving</span>
+</div>
+</div>
+
+</div>
+
 </section>
 
-<!-- ================= PROJECTS ================= -->
+<!-- PROJECTS -->
+
 <section id="projects">
-    <h2>Projects</h2>
 
-    <div class="project-grid">
+<h2 class="section-title">Projects</h2>
 
-        <!-- 1️⃣ Real-Time GPS Emergency Alert System -->
-        <a href="https://github.com/Vijay0567/Real-Time-GPS-Based-Emergency-Alert-Location-Sharing-System"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="gps.png" alt="Real-Time GPS Emergency Alert System">
-                <h3>Real-Time GPS Emergency Alert System</h3>
-                <ul>
-                    <li>Secure Django backend for real-time emergency alerts</li>
-                    <li>Live geolocation API integration for tracking</li>
-                    <li>Automated alert notification workflows</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Django, Python</p>
-            </div>
-        </a>
+<div class="project-grid">
 
-        <!-- 2️⃣ Health & Fitness React App -->
-        <a href="https://github.com/Vijay0567/Health-Fitness-React-App-Modern-Fitness-Tracking-Web-Application"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="fitness.jpg" alt="Health and Fitness React Application">
-                <h3>Health & Fitness React App</h3>
-                <ul>
-                    <li>Responsive workout tracking platform</li>
-                    <li>Secure user authentication workflows</li>
-                    <li>Optimized UI performance and state management</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> React.js, JavaScript</p>
-            </div>
-        </a>
+<!-- Project 1 -->
 
-        <!-- 3️⃣ Air Quality Monitoring System -->
-        <a href="https://github.com/Vijay0567/Air-Quality-Monitoring-System-Arduino-"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="air.png" alt="Air Quality Monitoring System using Arduino">
-                <h3>Air Quality Monitoring System</h3>
-                <ul>
-                    <li>IoT-based environmental monitoring solution</li>
-                    <li>Arduino sensor integration and calibration</li>
-                    <li>Optimized data sampling and reporting</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Arduino, Embedded C</p>
-            </div>
-        </a>
+<a href="https://github.com/Vijay0567/Real-Time-GPS-Based-Emergency-Alert-Location-Sharing-System"
+target="_blank"
+class="project-link">
 
-        <!-- 4️⃣ Predictive Analytics Dashboard -->
-        <a href="https://github.com/Vijay0567/Predictive-Analytics-Project-Dashboard-Machine-Learning-"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="predictive.png" alt="Predictive Analytics Dashboard using Python">
-                <h3>Predictive Analytics Dashboard</h3>
-                <ul>
-                    <li>Exploratory Data Analysis (EDA) and feature engineering</li>
-                    <li>Regression and classification modeling</li>
-                    <li>Interactive analytical dashboards</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Python, Scikit-learn</p>
-            </div>
-        </a>
+<div class="project-card">
 
-        <!-- 5️⃣ Electricity Consumption Analytics -->
-        <a href="https://github.com/Vijay0567/TG-Electricity-Consumption-Billing-Analytics-Dashboard-Power-BI-"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="tg.png" alt="Electricity Consumption Analytics Dashboard">
-                <h3>Electricity Consumption Analytics</h3>
-                <ul>
-                    <li>Billing and usage trend analysis</li>
-                    <li>Interactive Power BI dashboard development</li>
-                    <li>Data modeling for consumption insights</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Power BI</p>
-            </div>
-        </a>
+<img src="gps.png">
 
-        <!-- 6️⃣ E-Vision EV Forecasting -->
-        <a href="https://github.com/Vijay0567/E-Vision-AI-Powered-Electric-Vehicle-Insights-Forecasting"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="ev.png" alt="Electric Vehicle Forecasting Project">
-                <h3>E-Vision EV Forecasting</h3>
-                <ul>
-                    <li>EV adoption trend analysis</li>
-                    <li>Machine learning forecasting models</li>
-                    <li>Regional dashboard insights</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Python, Machine Learning</p>
-            </div>
-        </a>
+<h3>Real-Time GPS Emergency Alert System</h3>
 
-        <!-- 7️⃣ Bookkeeping App -->
-        <a href="https://github.com/Vijay0567/bookkeeping-app"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="bookkeeping.png" alt="Bookkeeping Flask Application">
-                <h3>Bookkeeping App</h3>
-                <ul>
-                    <li>Flask-based backend architecture</li>
-                    <li>JWT authentication and role-based access control</li>
-                    <li>RESTful API design</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Flask, Python</p>
-            </div>
-        </a>
+<p class="project-desc">
+Django-based emergency alert system enabling real-time location
+sharing for faster communication with emergency contacts.
+</p>
 
-        <!-- 8️⃣ EV Analytics Dashboard (Excel) -->
-        <a href="https://github.com/Vijay0567/Electric-Vehicle-Analytics-Forecasting-Dashboard-Excel-"
-           target="_blank" rel="noopener" class="project-link">
-            <div class="project-card">
-                <img src="excel-ev.png" alt="Electric Vehicle Analytics Excel Dashboard">
-                <h3>EV Analytics Dashboard (Excel)</h3>
-                <ul>
-                    <li>Analysis of 180K+ EV records</li>
-                    <li>Interactive PivotTable dashboard</li>
-                    <li>Forecasting and scenario simulations</li>
-                </ul>
-                <p class="tech"><strong>Tech Stack:</strong> Microsoft Excel</p>
-            </div>
-        </a>
+<ul>
+<li>Live GPS location tracking</li>
+<li>Automated emergency alerts</li>
+<li>Django backend system</li>
+</ul>
 
-    </div>
+<div class="project-tech">
+<span>Django</span>
+<span>Python</span>
+<span>JavaScript</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 2 -->
+
+<a href="https://github.com/Vijay0567/Health-Fitness-React-App-Modern-Fitness-Tracking-Web-Application"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="fitness.jpg">
+
+<h3>Health & Fitness React App</h3>
+
+<p class="project-desc">
+A modern fitness tracking web application built using React to
+manage workouts and user progress.
+</p>
+
+<ul>
+<li>User workout tracking</li>
+<li>Responsive UI design</li>
+<li>React component architecture</li>
+</ul>
+
+<div class="project-tech">
+<span>React</span>
+<span>JavaScript</span>
+<span>CSS</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 3 -->
+
+<a href="https://github.com/Vijay0567/Air-Quality-Monitoring-System-Arduino-"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="air.png">
+
+<h3>Air Quality Monitoring System</h3>
+
+<p class="project-desc">
+IoT-based environmental monitoring system that measures pollution
+levels using Arduino sensors.
+</p>
+
+<ul>
+<li>MQ135 air quality sensor</li>
+<li>DHT11 temperature monitoring</li>
+<li>Real-time pollution analysis</li>
+</ul>
+
+<div class="project-tech">
+<span>Arduino</span>
+<span>Embedded C</span>
+<span>IoT</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 4 -->
+
+<a href="https://github.com/Vijay0567/Predictive-Analytics-Project-Dashboard-Machine-Learning-"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="predictive.png">
+
+<h3>Predictive Analytics Dashboard</h3>
+
+<p class="project-desc">
+Machine learning project analyzing datasets and predicting trends
+using Python models and visual dashboards.
+</p>
+
+<ul>
+<li>Exploratory data analysis</li>
+<li>Machine learning models</li>
+<li>Insightful visual dashboards</li>
+</ul>
+
+<div class="project-tech">
+<span>Python</span>
+<span>Pandas</span>
+<span>Scikit-learn</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 5 -->
+
+<a href="https://github.com/Vijay0567/TG-Electricity-Consumption-Billing-Analytics-Dashboard-Power-BI-"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="tg.png">
+
+<h3>Electricity Consumption Analytics</h3>
+
+<p class="project-desc">
+Data analytics dashboard analyzing electricity consumption patterns
+and billing trends.
+</p>
+
+<ul>
+<li>Power BI dashboard</li>
+<li>Consumption trend analysis</li>
+<li>Interactive visual insights</li>
+</ul>
+
+<div class="project-tech">
+<span>Power BI</span>
+<span>Excel</span>
+<span>Data Analysis</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 6 -->
+
+<a href="https://github.com/Vijay0567/E-Vision-AI-Powered-Electric-Vehicle-Insights-Forecasting"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="ev.png">
+
+<h3>E-Vision EV Forecasting</h3>
+
+<p class="project-desc">
+AI-powered analytics platform analyzing electric vehicle adoption
+trends and forecasting future growth.
+</p>
+
+<ul>
+<li>EV adoption trend analysis</li>
+<li>Machine learning forecasting</li>
+<li>Interactive dashboards</li>
+</ul>
+
+<div class="project-tech">
+<span>Python</span>
+<span>Machine Learning</span>
+<span>Streamlit</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 7 -->
+
+<a href="https://github.com/Vijay0567/bookkeeping-app"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="bookkeeping.png">
+
+<h3>Bookkeeping App</h3>
+
+<p class="project-desc">
+Flask-based backend system for managing books, libraries, and users
+with secure authentication.
+</p>
+
+<ul>
+<li>JWT authentication</li>
+<li>REST API architecture</li>
+<li>Modular Flask backend</li>
+</ul>
+
+<div class="project-tech">
+<span>Flask</span>
+<span>Python</span>
+<span>REST API</span>
+</div>
+
+</div>
+</a>
+
+
+<!-- Project 8 -->
+
+<a href="https://github.com/Vijay0567/Electric-Vehicle-Analytics-Forecasting-Dashboard-Excel-"
+target="_blank"
+class="project-link">
+
+<div class="project-card">
+
+<img src="excel-ev.png">
+
+<h3>EV Analytics Dashboard (Excel)</h3>
+
+<p class="project-desc">
+Excel-based dashboard analyzing EV datasets with forecasting
+and interactive analytics.
+</p>
+
+<ul>
+<li>180K+ EV dataset analysis</li>
+<li>Pivot tables and forecasting</li>
+<li>Interactive Excel dashboard</li>
+</ul>
+
+<div class="project-tech">
+<span>Excel</span>
+<span>Pivot Tables</span>
+<span>Forecasting</span>
+</div>
+
+</div>
+</a>
+
+
+</div>
 </section>
 
-<!-- ================= TRAINING ================= -->
+<!-- Training -->
+
 <section id="training">
-    <h2>Training & Internship</h2>
 
-    <div class="training-container">
-        <div class="training-card">
+<h2 class="section-title">Training</h2>
 
-            <div class="training-header">
-                <h3>Data Science Intern</h3>
-                <span class="training-duration">2024</span>
-            </div>
+<div class="timeline">
 
-            <h4>From Data to Insights — Lovely Professional University</h4>
+<div class="timeline-progress"></div>
 
-            <p class="training-description">
-                Completed a structured data science internship focused on transforming
-                real-world datasets into meaningful analytical outputs and actionable insights.
-            </p>
+<div class="timeline-item">
 
-            <ul>
-                <li>End-to-end data preprocessing and validation</li>
-                <li>Exploratory Data Analysis (EDA)</li>
-                <li>Feature engineering techniques</li>
-                <li>Data visualization using Python</li>
-            </ul>
+<div class="timeline-dot"></div>
 
-            <p class="tech">
-                <strong>Tools & Technologies:</strong> Python, Pandas, NumPy, Matplotlib, Seaborn
-            </p>
+<div class="timeline-content">
 
-            <div class="training-link-container">
-                <a href="https://github.com/Vijay0567/data-to-insights-project"
-                   target="_blank" class="training-link">
-                    View Internship Project on GitHub
-                </a>
-            </div>
 
-        </div>
-    </div>
+<div class="training-header">
+
+<h3>Data Science Intern</h3>
+<span>Jun 2025 – Jul 2025</span>
+
+</div>
+
+<h4>From Data to Insights: A Hands-On Approach to Data Science</h4>
+
+<p class="training-org">Lovely Professional University</p>
+
+<ul>
+<li>Performed data cleaning, preprocessing, and exploratory data analysis on real-world datasets to uncover patterns and trends.</li>
+
+<li>Utilized Python with Pandas and NumPy for efficient data manipulation.</li>
+
+<li>Developed visualizations using Matplotlib and Seaborn to communicate analytical insights.</li>
+</ul>
+
+<div class="tech-stack">
+
+<span>Python</span> <span>Pandas</span> <span>NumPy</span> <span>Matplotlib</span> <span>Seaborn</span>
+
+</div>
+
+<a href="https://github.com/Vijay0567/data-to-insights-project"
+target="_blank"
+class="github-btn">
+
+View Project on GitHub →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+<section id="certifications">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="cert-grid">
+
+<!-- Oracle -->
+
+<div class="cert-card">
+
+<img src="oracle.png" class="cert-preview">
+
+<h3>Oracle Data Platform 2025 Certified Foundations Associate</h3>
+
+<p class="cert-org">Oracle University</p>
+
+<p class="cert-desc">
+Certified in Oracle Data Platform fundamentals including SQL,
+database concepts, and data management techniques.
+</p>
+
+<span class="cert-date">March 2026</span>
+
+<a href="https://drive.google.com/file/d/1-E6O2xGxMdp7FjHjMsovPlxnZCS12geX/view?pli=1"
+class="cert-btn"
+target="_blank">
+
+View Certificate →
+
+</a>
+
+</div>
+
+
+<!-- Deloitte -->
+
+<div class="cert-card">
+
+<img src="Deloitte.png" class="cert-preview">
+
+<h3>Data Analytics Job Simulation</h3>
+
+<p class="cert-org">Deloitte – Forage Virtual Experience</p>
+
+<p class="cert-desc">
+Completed Deloitte’s virtual data analytics experience including
+data analysis, business insights, and dashboard interpretation.
+</p>
+
+<span class="cert-date">December 2025</span>
+
+<a href="https://drive.google.com/file/d/1u-mj-OEVq_lBvnszVKxQiZGraC5zTt5l/view?pli=1"
+class="cert-btn"
+target="_blank">
+
+View Certificate →
+
+</a>
+
+</div>
+
+
+<!-- LPU -->
+
+<div class="cert-card">
+
+<img src="lpu.png" class="cert-preview">
+
+<h3>From Data to Insights</h3>
+
+<p class="cert-org">Lovely Professional University</p>
+
+<p class="cert-desc">
+Awarded Certificate of Merit (Grade A) for completing a hands-on
+data science training program involving EDA and visualization.
+</p>
+
+<span class="cert-date">June 2025</span>
+
+<a href="https://drive.google.com/file/d/1pKV_qCjq13qJdchTbbH_2MtjJbnf_w40/view"
+class="cert-btn"
+target="_blank">
+
+View Certificate →
+
+</a>
+
+</div>
+
+
+<!-- Infosys -->
+
+<div class="cert-card">
+
+<img src="infosys.png" class="cert-preview">
+
+<h3>Build Generative AI Apps & Solutions</h3>
+
+<p class="cert-org">Infosys Springboard</p>
+
+<p class="cert-desc">
+Learned to build Generative AI solutions using no-code tools
+and modern AI platforms.
+</p>
+
+<span class="cert-date">August 2024</span>
+
+<a href="https://drive.google.com/file/d/1GJ0AZ4XH-oEp0V6X9E56oLiOBKVByQri/view"
+class="cert-btn"
+target="_blank">
+
+View Certificate →
+
+</a>
+
+</div>
+
+
+<!-- freeCodeCamp -->
+
+<div class="cert-card">
+
+<img src="freecodecamp.png" class="cert-preview">
+
+<h3>Responsive Web Design Certification</h3>
+
+<p class="cert-org">freeCodeCamp</p>
+
+<p class="cert-desc">
+Completed certification covering HTML, CSS, responsive layouts,
+flexbox, and modern web design principles.
+</p>
+
+<span class="cert-date">October 2023</span>
+
+<a href="https://www.freecodecamp.org/certification/fccbcf16e44-7500-4e7e-9797-17e7d74cb302/responsive-web-design"
+class="cert-btn"
+target="_blank">
+
+View Certificate →
+
+</a>
+
+</div>
+
+
+<!-- Java -->
+
+<div class="cert-card">
+
+<img src="java.png" class="cert-preview">
+
+<h3>Java Programming (72 Hours)</h3>
+
+<p class="cert-org">Lovely Professional University – iamneo</p>
+
+<p class="cert-desc">
+Completed an intensive 72-hour Java Programming course covering
+core Java, OOP concepts, and application development fundamentals.
+</p>
+
+<span class="cert-date">May 2025</span>
+
+<a href="https://drive.google.com/file/d/1GyL5hm04lV7mv7NwfCya9eX-0kzgnz5U/view?usp=sharing"
+class="cert-btn"
+target="_blank">
+
+View Certificate →
+
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- ================= CONTACT ================= -->
+<!-- EDUCATION SECTION -->
+<section id="education">
+  <h2 class="section-title">Education</h2>
+  <p class="education-subtitle">Academic background and qualifications</p>
+  
+  <div class="education-timeline">
+    <!-- Timeline line -->
+    <div class="timeline-line"></div>
+    
+    <!-- Timeline nodes -->
+    <div class="timeline-node" style="top: 30px;"></div>
+    <div class="timeline-node" style="top: 230px;"></div>
+    <div class="timeline-node" style="top: 430px;"></div>
+    <div class="timeline-node" style="bottom: 20px;"></div>
+    
+    <!-- Card 1: Bachelor of Technology -->
+    <div class="edu-card">
+      <div class="edu-card-content">
+        <h3 class="edu-degree-title">Bachelor of Technology</h3>
+        <p class="edu-institution">Lovely Professional University, Punjab, India</p>
+        <div class="edu-info">
+          <span class="edu-grade">Percentage: 97.3%</span>
+          <span class="edu-date">Jun'20 – Mar'21</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 2: Intermediate -->
+    <div class="edu-card">
+      <div class="edu-card-content">
+        <h3 class="edu-degree-title">Intermediate</h3>
+        <p class="edu-institution">Sri Gowthami Junior College, Andhra Pradesh</p>
+        <div class="edu-info">
+          <span class="edu-grade">CGPA: 7.9</span>
+          <span class="edu-date">Aug'23 – Present</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card 3: SSC Board -->
+    <div class="edu-card">
+      <div class="edu-card-content">
+        <h3 class="edu-degree-title">SSC Board</h3>
+        <p class="edu-institution">ZP High School, Andhra Pradesh</p>
+        <div class="edu-info">
+          <span class="edu-grade">Percentage: 95.6%</span>
+          <span class="edu-date">Jul'21 – Mar'23</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Future node placeholder (empty) -->
+    <div class="future-node"></div>
+  </div>
+  
+  <!-- Sparkle icon -->
+  <div class="sparkle-icon">
+    <svg viewBox="0 0 24 24" fill="#38bdf8"><path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/></svg>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
 <section id="contact">
-    <h2>Contact</h2>
+<div class="contact-header">
+<h2 class="contact-title">Get In Touch</h2>
+<p class="contact-subtitle">Feel free to contact me for any project or collaboration</p>
+<p class="contact-links">
+</p>
+</div>
 
-    <div class="contact-grid">
+<div class="contact-container">
+<div class="contact-content">
 
-        <div class="contact-card">
-            <h3>📧 Email</h3>
-            <a href="mailto:vijaygampala0@gmail.com">vijaygampala0@gmail.com</a>
-        </div>
+<!-- Contact Info Cards - LEFT SIDE -->
+<div class="contact-info">
+<a href="mailto:vijaygampala0@gmail.com" class="contact-card">
+<div class="contact-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+</div>
+<div class="contact-details">
+<h3>Email</h3>
+<p>vijaygampala0@gmail.com</p>
+</div>
+</a>
 
-        <div class="contact-card">
-            <h3>📱 Phone</h3>
-            <p>+91-9989854630</p>
-        </div>
+<a href="tel:+919989854630" class="contact-card">
+<div class="contact-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</div>
+<div class="contact-details">
+<h3>Phone</h3>
+<p>9989854630</p>
+</div>
+</a>
 
-        <div class="contact-card">
-            <h3>💻 GitHub</h3>
-            <a href="https://github.com/Vijay0567" target="_blank">github.com/Vijay0567</a>
-        </div>
+<a href="https://www.linkedin.com/in/vijay-gampala" target="_blank" class="contact-card">
+<div class="contact-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</div>
+<div class="contact-details">
+<h3>LinkedIn</h3>
+<p>vijay-gampala</p>
+</div>
+</a>
 
-        <div class="contact-card">
-            <h3>🔗 LinkedIn</h3>
-            <a href="https://linkedin.com/in/vijay-gampala" target="_blank">
-                linkedin.com/in/vijay-gampala
-            </a>
-        </div>
+<a href="https://github.com/Vijay0567" target="_blank" class="contact-card">
+<div class="contact-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+</div>
+<div class="contact-details">
+<h3>GitHub</h3>
+<p>Vijay0567</p>
+</div>
+</a>
+</div>
 
-    </div>
+<!-- Contact Form - RIGHT SIDE -->
+<div class="contact-form-wrapper">
+<form class="contact-form" onsubmit="sendEmail(event)">
+<input type="text" name="name" placeholder="Your Name" required class="form-input">
+<input type="email" name="email" placeholder="Your Email" required class="form-input">
+<textarea name="message" placeholder="Your Message" rows="5" required class="form-input form-textarea"></textarea>
+<button type="submit" class="submit-btn">
+<span>Send Message</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="m3 11 18-5-12 7-4-2-6 6 6-6-4-2 12 7Z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+</button>
+</form>
+</div>
+</div>
+</div>
 
-    <div class="contact-resume">
-        <a href="cv.pdf" class="btn" target="_blank">
-            📄 Download Resume
-        </a>
-    </div>
+<!-- Footer Social Icons & Copyright -->
+<div class="contact-footer">
+<div class="social-icons">
+<a href="https://github.com/Vijay0567" target="_blank" class="social-icon" title="GitHub">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+</a>
+<a href="https://www.linkedin.com/in/vijay-gampala" target="_blank" class="social-icon" title="LinkedIn">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<a href="#" class="social-icon" title="Twitter">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+<a href="https://www.instagram.com/vijaygampala7/" class="social-icon" title="Instagram">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+</a>
+</div>
+<p class="copyright">© 2024 Vijay Gampala. All rights reserved.</p>
+</div>
 </section>
 
-<footer>
-    <p>© 2026 Gampala Vijay Kumar | All Rights Reserved</p>
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-</body>
-</html>
+<script src="main.js"></script>
 
-
-<!-- ================= SCRIPTS ================= -->
+<!-- Fallback for skills visibility -->
 <script>
-window.addEventListener("load", function() {
-
-    // Intro Fade Out
-    const intro = document.getElementById("intro-screen");
-    document.body.style.overflow = "hidden";
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Add no-js class as fallback so skills are visible even without JS animation
     setTimeout(function() {
-        intro.style.transition = "opacity 1s ease";
-        intro.style.opacity = "0";
-
-        setTimeout(function() {
-            intro.style.display = "none";
-            document.body.style.overflow = "auto";
-            window.scrollTo(0, 0);
-        }, 1000);
-    }, 3200);
-
-    // About Section Reveal
-    const aboutSection = document.querySelector("#about");
-
-    function revealAbout() {
-        const sectionTop = aboutSection.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.2;
-
-        if (sectionTop < screenPosition) {
-            aboutSection.classList.add("about-visible");
-        }
-    }
-
-    window.addEventListener("scroll", revealAbout);
+        document.querySelectorAll('.skill-category').forEach(function(el) {
+            if (!el.classList.contains('visible')) {
+                el.classList.add('no-js');
+            }
+        });
+        
+        // Also show training items if JS fails
+        document.querySelectorAll('.timeline-item').forEach(function(el) {
+            if (!el.classList.contains('show')) {
+                el.classList.add('show');
+                el.style.opacity = "1";
+                el.style.transform = "translateY(0)";
+            }
+        });
+        
+        // Show project cards if JS fails
+        document.querySelectorAll('.project-card').forEach(function(el) {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+        });
+        
+        // Show education cards if JS fails
+        document.querySelectorAll('.edu-card').forEach(function(el) {
+            el.classList.add('visible');
+            el.style.opacity = "1";
+            el.style.transform = "translateX(0)";
+        });
+    }, 500);
 });
 </script>
 
