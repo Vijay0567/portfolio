@@ -152,17 +152,17 @@ I enjoy working with Python, machine learning, and visualization tools to analyz
 
 <div class="about-right">
 
-<div class="about-card">
+<div class="about-card" data-reveal="up">
 <h3>Data Analysis</h3>
 <p>Exploring datasets using Python, Pandas, and NumPy to discover meaningful insights.</p>
 </div>
 
-<div class="about-card">
+<div class="about-card" data-reveal="up">
 <h3>Machine Learning</h3>
 <p>Building predictive models using Scikit-learn and feature engineering techniques.</p>
 </div>
 
-<div class="about-card">
+<div class="about-card" data-reveal="up">
 <h3>Dashboard Development</h3>
 <p>Creating interactive dashboards using Power BI, Excel, and Python visualization tools.</p>
 </div>
@@ -183,7 +183,7 @@ I enjoy working with Python, machine learning, and visualization tools to analyz
 <div class="skills-container">
 
 <!-- Languages -->
-<div class="skill-category" data-animate="slide">
+<div class="skill-category" data-reveal="up">
 <div class="category-header">
 <span class="category-icon">💻</span>
 <h3>Languages</h3>
@@ -199,7 +199,7 @@ I enjoy working with Python, machine learning, and visualization tools to analyz
 </div>
 
 <!-- Libraries & Analysis -->
-<div class="skill-category" data-animate="slide">
+<div class="skill-category" data-reveal="up">
 <div class="category-header">
 <span class="category-icon">📊</span>
 <h3>Libraries & Analysis</h3>
@@ -213,7 +213,7 @@ I enjoy working with Python, machine learning, and visualization tools to analyz
 </div>
 
 <!-- Databases -->
-<div class="skill-category" data-animate="slide">
+<div class="skill-category" data-reveal="up">
 <div class="category-header">
 <span class="category-icon">🗃️</span>
 <h3>Databases</h3>
@@ -225,7 +225,7 @@ I enjoy working with Python, machine learning, and visualization tools to analyz
 </div>
 
 <!-- Tools & Platforms -->
-<div class="skill-category" data-animate="slide">
+<div class="skill-category" data-reveal="up">
 <div class="category-header">
 <span class="category-icon">🛠️</span>
 <h3>Tools & Platforms</h3>
@@ -303,7 +303,7 @@ I enjoy working with Python, machine learning, and visualization tools to analyz
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="gps.png">
 
@@ -336,7 +336,7 @@ sharing for faster communication with emergency contacts.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="fitness.jpg">
 
@@ -369,7 +369,7 @@ manage workouts and user progress.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="air.png">
 
@@ -402,7 +402,7 @@ levels using Arduino sensors.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="predictive.png">
 
@@ -435,7 +435,7 @@ using Python models and visual dashboards.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="tg.png">
 
@@ -468,7 +468,7 @@ and billing trends.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="ev.png">
 
@@ -501,7 +501,7 @@ trends and forecasting future growth.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="bookkeeping.png">
 
@@ -534,7 +534,7 @@ with secure authentication.
 target="_blank"
 class="project-link">
 
-<div class="project-card">
+<div class="project-card" data-reveal="up">
 
 <img src="excel-ev.png">
 
@@ -955,7 +955,7 @@ View Certificate →
 
 <!-- Contact Form - RIGHT SIDE -->
 <div class="contact-form-wrapper">
-<form class="contact-form" onsubmit="sendEmail(event)">
+<form class="contact-form" id="contact-form">
 <input type="text" name="name" placeholder="Your Name" required class="form-input">
 <input type="email" name="email" placeholder="Your Email" required class="form-input">
 <textarea name="message" placeholder="Your Message" rows="5" required class="form-input form-textarea"></textarea>
@@ -1029,5 +1029,34 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script>
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  fetch("https://formspree.io/f/xjgaaoyw", {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    } else {
+      alert("❌ Something went wrong.");
+    }
+  })
+  .catch(error => {
+    alert("❌ Error sending message.");
+  });
+});
+</script>
+<!-- Particles.js config -->
 </body>
 </html>

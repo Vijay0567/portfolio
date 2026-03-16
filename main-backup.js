@@ -223,6 +223,3 @@ if (themeToggle) {
   });
 }
 
-
-
-
